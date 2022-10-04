@@ -1,0 +1,17 @@
+.breadCrumbs{
+    @apply top-0 left-0 flex items-center text-xl mx-5 py-10;
+    border-bottom: 1px solid #707070
+}
+
+.breadCrumbs ul{
+    @apply flex flex-col md:flex-row;
+}
+
+.breadCrumbs li:not(:last-child)::after{
+    content: '>';
+    @apply mx-2;
+}
+
+.disableCrumbs{
+    @apply opacity-80;
+}

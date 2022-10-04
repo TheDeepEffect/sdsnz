@@ -1,0 +1,4 @@
+.btn{
+    @apply  rounded-3xl p-5;
+    background-color: var(--green);
+}

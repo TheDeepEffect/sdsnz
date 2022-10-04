@@ -1,0 +1,33 @@
+
+.servicesContainer{
+    @apply min-h-screen min-w-full relative flex items-center justify-center;
+    background-color: #33333375;
+}
+
+.servicesContainer::before{
+    @apply absolute;
+    content: '';
+    background: url('/images/road_landscape.jpg') no-repeat center;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.servicesContent{
+    @apply flex flex-col items-center justify-center;
+}
+.servicesContent p{
+    @apply text-white text-4xl p-6 m-6 text-center;
+    border-radius: 1.875rem;
+    background: #33333380;
+}
+.servicesNavigation{
+    @apply w-full flex items-center justify-around flex-col md:flex-row
+}
+
+.servicesNavigation button{
+    @apply text-4xl font-semibold my-2  md:my-0;
+}

@@ -1,0 +1,20 @@
+.priceCard{
+    background-color: var(--black);
+    border: 1px solid #707070;
+    border-radius: 64px;
+    @apply w-64 h-48 flex flex-col items-center justify-center text-white relative my-3  md:mx-3 md:my-0;
+
+}
+
+.priceTitle{
+    @apply w-9/12 text-center text-2xl font-bold text-black absolute top-0;
+    background-color: #dddddd;
+    border-radius: 64px;
+    border: 1px solid #707070;
+}
+.price{
+    @apply text-5xl text-white;
+}
+.priceSubText{
+    
+}

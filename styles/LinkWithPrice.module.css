@@ -1,0 +1,21 @@
+.linkWithPrice{
+    @apply flex flex-col  md:flex-row items-center justify-center md:justify-start my-4;
+}
+
+.linkWithPrice p{
+    @apply text-xl font-semibold  py-1 !important;
+}
+.lContent{
+    @apply  z-10
+}
+.lContent p{
+    @apply rounded-2xl text-white;
+    background-color: #333333;
+    border: 1px solid #707070;
+}
+.rContent{
+    @apply text-black rounded-2xl md:-ml-7 text-right px-5;
+    background-color: #dddddd;
+    border: 1px solid #707070;
+}
+

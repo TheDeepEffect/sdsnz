@@ -1,0 +1,19 @@
+.network{
+    @apply w-full flex items-center my-20 flex-col  md:flex-row;
+    background-color: #DDDDDD;
+    border: 1px solid #707070;
+}
+
+.networkHeader h3{
+    @apply text-white text-4xl my-0 !important;
+}
+.networkHeader{
+    background-color: var(--black);
+    @apply py-5 px-6 min-w-fit;
+
+}
+
+.networkContent p{
+    @apply my-0 ml-5  text-2xl  !important;
+}
+

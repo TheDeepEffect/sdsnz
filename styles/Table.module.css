@@ -1,0 +1,24 @@
+.table{
+    @apply w-full;
+}
+
+.table thead{
+    @apply text-white text-center md:text-2xl;
+    background-color: var(--black);
+}
+.table th tr{
+    @apply flex items-center justify-around
+}
+.table tr{
+    @apply w-full text-center border-black;
+}
+
+.table td{
+    /* border: 1px solid black; */
+    @apply text-2xl md:leading-10;
+
+    border-bottom: 1px solid #747474;
+}
+.table tbody{
+    background-color: #dddddd;
+}

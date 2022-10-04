@@ -1,0 +1,26 @@
+.licenseCard{
+    @apply w-full flex flex-col  justify-between;
+}
+
+.licenseImage{
+    @apply w-full flex items-center justify-center;
+}
+
+.licenseImage img{
+    @apply shadow-2xl shadow-black  !important;
+}
+
+.licenseHeader h3{
+    @apply text-4xl font-bold;
+}
+.licenseContent{
+    /* @apply w-fit */
+}
+
+.licenseContent p{
+    @apply w-3/4 !important;
+}
+
+.licenseContent button{
+    @apply text-2xl font-bold;
+}

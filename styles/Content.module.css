@@ -1,0 +1,38 @@
+.indented{
+    @apply px-1;
+}
+
+.indented p{
+    @apply py-0 my-0 !important;
+}
+
+a.externalLink{
+    @apply block text-2xl font-semibold;
+    color: blue;
+
+}
+
+a.externalLink:focus {
+    border-bottom: 1px solid;
+    background: #bae498;
+  }
+  a.externalLink:hover {
+    border-bottom: 1px solid;
+    background: #cdfeaa;
+  }
+  
+a.externalLink:active {
+    background: #265301;
+    color: #cdfeaa;
+  }
+p.underLine{
+  @apply underline;
+}
+
+.contentImages{
+  @apply w-full h-full relative
+}
+
+.contentImages img{
+  height: 75vh !important;
+}

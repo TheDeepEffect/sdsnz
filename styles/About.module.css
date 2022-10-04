@@ -1,0 +1,55 @@
+.about{
+    @apply w-full min-h-screen;
+}
+
+.aboutContainer{
+    @apply w-full;
+    
+}
+
+.story{
+    @apply min-w-full bg-white;
+}
+
+.about p{
+    @apply text-2xl mx-16 pb-16 mt-16;
+}
+
+.infoContaienr{
+    @apply w-full bg-white;
+}
+
+.info{
+    @apply w-full flex flex-col items-center  mt-8;
+}
+
+.services{
+    /* min-height: 50vh; */
+    background-color: #33333375;
+    @apply w-full flex flex-col items-center justify-center text-white px-36 
+    relative py-7;
+}
+.services::before{
+    content: '';
+    background: url('/images/road_landscape.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.services button{
+    @apply text-3xl font-bold;
+    color: var(--black)
+}
+
+.services h3{
+    @apply text-4xl m-10 text-center;
+}
+
+.services h1{
+    @apply my-12 text-5xl font-semibold 
+}

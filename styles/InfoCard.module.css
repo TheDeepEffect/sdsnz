@@ -1,0 +1,42 @@
+.infoCard{
+    @apply w-10/12 flex flex-col items-center justify-center my-20;
+    border-radius: 10.313rem;
+    border: 1px solid #707070;
+}
+
+
+.infoNameContainer{
+    @apply flex w-8/12 items-center flex-col  md:flex-row;
+    background-color: #dddddd;
+    border-radius: 10.313rem;
+}
+
+.infoName{
+    @apply text-white px-11 text-2xl flex py-3 md:w-1/3;
+    background-color: var(--black);
+    border-radius: 10.313rem;
+
+}
+
+.infoDesignation{
+    @apply w-2/3 flex items-center justify-between mx-8;
+}
+
+.infoDesignation .socialLogo{
+    @apply h-8
+}
+
+.infoContent{
+    @apply flex flex-col md:flex-row items-center justify-between w-full;
+}
+.infoPic{
+    @apply md:ml-10 md:mb-10;
+}
+.infoPic img{
+    border: 10px solid var(--green) !important;
+    border-radius: 100% !important;
+
+}
+.infoContent p{
+    @apply text-2xl w-3/4;
+}

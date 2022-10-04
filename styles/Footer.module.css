@@ -1,0 +1,26 @@
+.footer{
+    @apply w-full  items-start justify-around flex flex-col  md:flex-row pt-20 md:pt-44;
+    min-height: 25vh;
+}
+
+.company{
+    @apply  justify-around w-1/2  flex flex-col m-5  md:flex-row md:m-0
+}
+
+.company div{
+    @apply  m-5 md:m-0;
+}
+.company h2{
+        @apply  text-3xl mb-20;
+}
+
+.companyLinks{
+    @apply text-2xl;
+}
+
+.connect h2{
+    @apply  text-3xl;
+}
+.socialIcons{
+    @apply text-5xl flex justify-around;
+}

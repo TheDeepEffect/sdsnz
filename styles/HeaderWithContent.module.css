@@ -1,0 +1,22 @@
+.headerWithContentContainer{
+    @apply w-full flex items-center py-8 px-0 md:px-8  justify-between flex-col md:flex-row md:items-end;
+}
+.content{
+    @apply  w-1/2;
+}
+
+
+.contentRow h3{
+    @apply text-4xl font-bold m-0 my-4 w-1/2  !important;
+}
+.contentRow p{
+    @apply text-4xl m-0 p-0 my-4 w-1/2 !important;
+}
+
+.headerWithContentContainer button{
+    @apply text-4xl font-bold
+}
+
+.contentRow{
+    @apply flex w-full flex-col md:flex-row
+}

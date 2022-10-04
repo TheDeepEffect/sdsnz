@@ -1,0 +1,98 @@
+.navbar{
+    color: var(--black);
+    @apply   flex flex-col  min-w-full bg-white justify-around items-center shadow-md  md:flex-row h-fit  md:h-28 z-10;
+    position: sticky;
+}
+.navbar .selected{
+    color:var(--green);
+}
+.navbarLogo{
+    @apply w-full text-center md:text-left;
+}
+.navbarLogo img{
+    padding:1rem 2.5rem !important;
+}
+
+.showMenuItem{
+    @apply hidden  !important;
+}
+
+.navbarMenus{
+    @apply w-full;
+}
+.navbarMenus ul{
+    @apply list-none w-full items-center justify-center flex flex-col  md:flex-row;
+}
+.navbarMenus li{
+    @apply mx-9;
+    
+}
+
+.navbarMenus li a{
+    @apply leading-6 h-6 font-bold;
+}
+
+.navbarSearch{
+    @apply w-full md:mr-9;
+}
+
+.navbarSearch li{
+    @apply list-none w-full items-center justify-end flex flex-col  md:flex-row;
+    
+}
+
+.navbarSearch li a{
+    @apply leading-6 h-6 font-bold;
+}
+
+.navbarToggleButton{
+    @apply flex justify-center md:hidden absolute right-6 top-6  h-1 w-4 bg-black cursor-pointer;
+}
+.navbarToggleButton::after{
+    content: '';
+    @apply block h-1 w-5 bg-black absolute top-3;
+}
+.navbarToggleButton::before{
+    content: '';
+    @apply block h-1 w-5  bg-black absolute bottom-3;
+}
+
+
+
+.menuOpen{
+    transition: width 1s;
+    @apply block md:hidden absolute right-10 top-6  h-1 w-0 bg-black cursor-pointer;
+}
+.menuOpen::after{
+    /* @apply transform origin-center  top-0; */
+    animation: menuAfterAnimation 1s forwards;
+}
+.menuOpen::before{
+    animation:menuBeforeAnimation  1s forwards;
+}
+
+.reverseMenu{
+    transition: width 0.5s ease-in-out;
+}
+
+
+
+@keyframes menuAfterAnimation {
+    from{
+        transform: rotate(0);    }
+    to{
+    transform:rotate(45deg);
+    top: 0;
+    }
+}
+
+@keyframes menuBeforeAnimation{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-45deg);
+        bottom:0;
+    }
+}
+
